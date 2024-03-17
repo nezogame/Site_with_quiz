@@ -1,0 +1,38 @@
+.navbar-item:hover {
+    text-decoration: underline !important;
+    color: aqua !important;
+}
+
+.active {
+    text-decoration: underline !important;
+    color: aqua !important;
+}
+
+.header {
+    background: #1976d2;
+}
+
+@media (max-width: 700px) {
+    .navbar-collapse {
+        display: block !important;
+        /* Force display: block on small screens */
+        padding: 0;
+        /* Remove default padding */
+        margin: 0;
+        /* Remove default margin */
+    }
+
+    .navbar-nav {
+        display: flex;
+        /* Display navigation links as flexbox */
+        flex-direction: column;
+        /* Stack links vertically */
+    }
+
+    .nav-link {
+        padding: 10px;
+        /* Adjust link padding */
+    }
+}
+
+.drop-down-menu {}
