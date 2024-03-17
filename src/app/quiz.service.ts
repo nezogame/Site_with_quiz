@@ -63,7 +63,7 @@ export class QuizService {
   ]
   constructor() { }
 
-  getQuizzes() {
+  getQuizzes(): Quiz[] {
     return this.quizzes;
   }
 }
