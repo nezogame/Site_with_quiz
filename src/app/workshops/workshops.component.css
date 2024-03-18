@@ -11,10 +11,6 @@ li::before {
     display: flex;
 }
 
-.third-workshop-img {
-    max-width: 30%;
-}
-
 .col button:active::after {
     opacity: 1;
 }
@@ -44,5 +40,4 @@ li::before {
 
 .content-section {
     font-size: 26px;
-    ;
 }
