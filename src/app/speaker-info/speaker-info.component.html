@@ -1,10 +1,8 @@
-<div class="container ">
-    <div class="row speaker-card justify-content-evenly align-items-center">
-        @for (speaker of speakers; track speaker) {
-        <div class="col-md-4 speaker-info">
-            <h3>{{speaker.name}}</h3>
-            <p class="text-left">{{speaker.information}}</p>
-        </div>
-        }
+<div class="row speaker-card justify-content-evenly align-items-start pt-3 text-center">
+    @for (speaker of speakers; track speaker) {
+    <div class="col-md-4 speaker-info">
+        <h3 class="font-libra-serif-modern highlighted_color display-5">{{speaker.name}}</h3>
+        <p class="fs-5">{{speaker.information}}</p>
     </div>
+    }
 </div>

@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+}
+
+.header h1 {
+    margin: 0;
+    /* Remove default margin */
+}
+
+.content {
+    padding-top: 50px;
+}
+
+.about-us img {
+    width: 100%;
+    /* Make image fit the width of the container */
+    margin-bottom: 20px;
+    /* Add space between image and text */
+}
+
+.society .content-section {
+    margin-bottom: 30px;
+    /* Add space between content sections */
+}
+
+.content-section button {
+    background-color: #333;
+    /* Set button background color */
+    color: white;
+    /* Set button text color */
+    padding: 10px 20px;
+    /* Set button padding */
+    border: none;
+    /* Remove default button border */
+    border-radius: 5px;
+    /* Add rounded corners to button */
+    cursor: pointer;
+    /* Set cursor to pointer on hover */
+}
+
+.footer {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    text-align: center;
+}
+
+li::before {
+    content: '✅ ';
+}
+
+.content {
+    font-size: 23px;
+}
+
+.title {
+    font-size: 28px;
+}
