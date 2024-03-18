@@ -1,0 +1,39 @@
+li::before {
+    content: '✅ ';
+}
+
+.row-equal-height {
+    display: flex;
+}
+
+.col button:active::after {
+    opacity: 1;
+}
+
+.col button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* Adjust opacity for visibility */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    /* Animation properties */
+}
+
+.active {
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content {
+    font-size: 21px;
+}
+
+.arch {
+    border-radius: 50% 50% 0 0;
+    /* Creates the arch shape */
+}
