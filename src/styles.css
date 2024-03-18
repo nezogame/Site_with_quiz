@@ -1,1 +1,31 @@
 @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+
+body {
+    background-color: #000000 !important;
+    color: #F7F5F5;
+}
+
+main {
+    min-height: 100vh !important;
+}
+
+.highlighted_color {
+    color: #FCD413 !important;
+}
+
+.font-merriweather {
+    font-family: 'Merriweather';
+}
+
+.font-lumberjack {
+    font-family: 'Lumberjack';
+}
+
+.font-libra-serif-modern {
+    font-family: 'Libra Serif Modern';
+}
+
+.font-zantiqa {
+    font-family: Zantiqa;
+    font-size: 30px;
+}

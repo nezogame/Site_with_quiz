@@ -1,32 +1,39 @@
 <!-- header -->
-<header>
-    <div class="navbar bg-secondary p-5">
-        <!-- logo -->
-        <div class="navbar-brand row m-1 ">
-            <a class="navbar-item text-light col-sm" routerLink="/" routerLinkActive="active">
-                Youth Political Society
+<header class="header">
+    <nav class="navbar container py-3 ">
+        <!-- navbar -->
+        <div class="navbar-brand menu row m-1">
+            <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+                class=" bi bi-house navbar-item text-light col text-decoration-none ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-house"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                </svg>
+                YPS
             </a>
-            <a class="navbar-item text-light col-sm" routerLink="/future-heroes" routerLinkActive="active">
+            <a class="navbar-item text-light col text-decoration-none" routerLink="/future-heroes"
+                routerLinkActive="active">
                 Future Heroes Latvia
             </a>
-            <a class="navbar-item text-light col-sm" routerLink="/main-goal" routerLinkActive="active">
-                The main goal of “YPS”
-            </a>
-            <a class="navbar-item text-light col-sm" routerLink="/workshops" routerLinkActive="active">
-                Workshops
-            </a>
-            <a class="navbar-item text-light col-sm" routerLink="/speakers" routerLinkActive="active">
-                Speakers of our workshops
-            </a>
-            <a class="navbar-item text-light col-sm" routerLink="/media" routerLinkActive="active">
+            <a class="col navbar-item text-light text-decoration-none " routerLink="/media" routerLinkActive="active">
                 We are in Media
             </a>
-            <a class="navbar-item text-light col-sm" routerLink="/voting16" routerLinkActive="active">
+            <a class="navbar-item text-light col text-decoration-none" routerLink="/workshops"
+                routerLinkActive="active">
+                Workshops
+            </a>
+            <a class="navbar-item text-light col text-decoration-none" routerLink="/speakers" routerLinkActive="active">
+                Speakers of our workshops
+            </a>
+
+            <a class="navbar-item text-light col-sm text-decoration-none" routerLink="/voting16"
+                routerLinkActive="active">
                 Voting 16
             </a>
-            <a class="navbar-item text-light col-sm" routerLink="/quiz" routerLinkActive="active">
+            <a class="navbar-item text-light col-sm text-decoration-none" routerLink="/quiz" routerLinkActive="active">
                 Quiz for practicingin Politics
             </a>
         </div>
-    </div>
+    </nav>
 </header>
