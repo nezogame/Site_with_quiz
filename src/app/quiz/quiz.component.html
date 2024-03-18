@@ -1,9 +1,47 @@
 <div class="container p-5">
-    <div class="row justify-content-center">
+    <div class="container d-flex align-items-center">
+        <div class="row">
+            <div class="row mt-4">
+                <div class="col-md-4 mt-4 text-center">
+                    <img class=" w-100" src="assets/images/yps-logo.png" alt="first workshop presentation"
+                        class="arch w-75 align-self-center">
+                </div>
+                <div class="col-md-8">
+                    <p class="font-libra-serif-modern highlighted_color display-5">Interesting Quiz for teenagers to
+                        gain new knowledges through informal education</p>
+                    <section class="content-section fs-5">
+                        <p class="mb-0">At our meetings, where through informal learning, young people learned a lot of
+                            interesting
+                            information about politics, democracy, and elections to the European Parliament. With each
+                            meeting, we saw how young people’s interest in politics grew. At our meetings there were
+                            speakers who were specialists in the field of Politics and International Relations, such as
+                            members of the European Parliament, US Congress Woman, deputies of the Youth Seimas of
+                            Latvia, advisors of the United Nations, students of Columbia University and the University
+                            of Maine.
+                        </p>
+                        <p class="mb-0">We saw that with each meeting we were moving towards our goal, we saw how young
+                            people
+                            participate in discussions and ask interesting questions.
+                            At each meeting of our Youth Political Society “YPS” we organised amusing Quiz. We saw how
+                            interesting it was for teenagers to gain new knowledge through informal education. It's
+                            always exciting!
+                        </p>
+                        <p class="mb-0">And we created Quiz on our website. That is everyone will be able to feel
+                            themselves in the
+                            world of politics! Learn a lot of new things and take part in the Quiz at any time
+                            convenient for you!
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-2 ">
         <div class="col-sm-8 ">
-            @if (currentQuiz<quizzes.length) { <p class="text-center">{{currentQuiz+1}} of {{quizzes.length}}</p>
+            <p class="text-center mb-1 display-4 highlighted_color font-merriweather">Quiz</p>
+            @if (currentQuiz<quizzes.length) { <p class="text-center mb-0">{{currentQuiz+1}} of {{quizzes.length}}</p>
 
-                <h1>{{ quizzes[currentQuiz].question }}</h1>
+                <h1 class="text-center">{{ quizzes[currentQuiz].question }}</h1>
 
                 <ul class="list-group">
                     @for (quiz of quizzes[currentQuiz].answer; track quiz) {
